@@ -13,10 +13,6 @@ import pandas as pd
 
 
 def ingest_data():
-
-    #
-    # Inserte su código aquí
-    #
   df1 = pd.read_fwf("clusters_report.txt", skiprows=4, names=['1', '2', '3', '4'])
   df = pd.DataFrame(columns=['cluster', 'cantidad_de_palabras_clave', 'porcentaje_de_palabras_clave', 'principales_palabras_clave'])
   for ind in range(len(df1)):
